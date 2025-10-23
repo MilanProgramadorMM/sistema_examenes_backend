@@ -33,7 +33,7 @@ WORKDIR /app
 # Copiar el JAR generado
 COPY --from=builder /app/target/*.jar app.jar
 
-COPY .env .env
+#COPY .env .env
 
 # Exponer puerto
 EXPOSE 8080
